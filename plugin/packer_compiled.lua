@@ -79,10 +79,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  azurite = {
+  ["auto-pairs"] = {
     loaded = true,
-    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\azurite",
-    url = "https://github.com/Azure/azurite"
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
+  ["awesome-vim-colorschemes"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\awesome-vim-colorschemes",
+    url = "https://github.com/rafi/awesome-vim-colorschemes"
   },
   ["cellular-automaton.nvim"] = {
     loaded = true,
@@ -119,6 +124,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
@@ -149,6 +159,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  nerdtree = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
+    url = "https://github.com/preservim/nerdtree"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -174,6 +189,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["pgsql.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\pgsql.vim",
+    url = "https://github.com/lifepillar/pgsql.vim"
+  },
   playground = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\playground",
@@ -187,13 +207,18 @@ _G.packer_plugins = {
   ["refactoring.nvim"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\refactoring.nvim",
-    url = "https://github.com/theprimeagen/refactoring.nvim"
+    url = "https://github.com/ThePrimeagen/refactoring.nvim"
   },
   ["rose-pine"] = {
     config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
+    url = "https://github.com/preservim/tagbar"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -211,15 +236,70 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
   ["vim-be-good"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
+  ["vim-closer"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-closer",
+    url = "https://github.com/rstacruz/vim-closer"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-js"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-js",
+    url = "https://github.com/yuezk/vim-js"
+  },
+  ["vim-jsx-pretty"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-jsx-pretty",
+    url = "https://github.com/maxmellon/vim-jsx-pretty"
+  },
+  ["vim-multiple-cursors"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-multiple-cursors",
+    url = "https://github.com/terryma/vim-multiple-cursors"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-terminal"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-terminal",
+    url = "https://github.com/tc50cal/vim-terminal"
+  },
+  ["yats.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\yats.vim",
+    url = "https://github.com/HerringtonDarkholme/yats.vim"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
@@ -229,14 +309,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
