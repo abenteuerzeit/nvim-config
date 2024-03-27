@@ -2,6 +2,9 @@
 
 ![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/0ab6a38f-ad1c-43b3-ae91-070db384682f)
 
+![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/40ef3696-db27-491d-8327-ec59da3aea2d)
+
+
 ## Packages
 
     auto-pairs/                copilot.vim/           nvim-treesitter/          trouble.nvim/    vim-jsx-pretty/
