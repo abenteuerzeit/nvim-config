@@ -4,6 +4,9 @@
 
 ![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/40ef3696-db27-491d-8327-ec59da3aea2d)
 
+![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/8790d860-ca4b-44e3-ae3e-8ccc581b3524)
+
+
 
 ## Packages
 
