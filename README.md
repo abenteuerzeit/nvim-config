@@ -2,6 +2,19 @@
 
 ![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/0ab6a38f-ad1c-43b3-ae91-070db384682f)
 
+## Packages
+
+auto-pairs/                copilot.vim/           nvim-treesitter/          trouble.nvim/    vim-jsx-pretty/
+awesome-vim-colorschemes/  friendly-snippets/     nvim-treesitter-context/  undotree/        vim-multiple-cursors/
+cellular-automaton.nvim/   harpoon/               packer.nvim/              vim-airline/     vim-surround/
+cloak.nvim/                lsp-zero.nvim/         pgsql.vim/                vim-be-good/     vim-terminal/
+cmp_luasnip/               LuaSnip/               playground/               vim-closer/      yats.vim/
+cmp-buffer/                mason.nvim/            plenary.nvim/             vim-commentary/  zen-mode.nvim/
+cmp-nvim-lsp/              mason-lspconfig.nvim/  refactoring.nvim/         vim-css-color/
+cmp-nvim-lua/              nerdtree/              rose-pine/                vim-devicons/
+cmp-path/                  nvim-cmp/              tagbar/                   vim-fugitive/
+coc.nvim/                  nvim-lspconfig/        telescope.nvim/           vim-js/
+
 ## No background image
 
 ![image](https://github.com/abenteuerzeit/nvim-config/assets/98088666/45ba03e8-457a-4384-8c87-b101dea68358)
