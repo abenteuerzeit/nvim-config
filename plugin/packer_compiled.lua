@@ -207,6 +207,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  tagbar = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -258,10 +263,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-jsx-pretty",
     url = "https://github.com/maxmellon/vim-jsx-pretty"
   },
+  ["vim-multiple-cursors"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-multiple-cursors",
+    url = "https://github.com/terryma/vim-multiple-cursors"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-terminal"] = {
+    loaded = true,
+    path = "C:\\Users\\amroz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-terminal",
+    url = "https://github.com/tc50cal/vim-terminal"
   },
   ["yats.vim"] = {
     loaded = true,

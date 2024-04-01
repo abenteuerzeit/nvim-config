@@ -73,6 +73,9 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- Reveal bars and starts in help
+vim.api.nvim_set_keymap('n', '<Leader>h', [[:set conceallevel=0<CR>:hi link HelpBar Normal<CR>:hi link HelpStar Normal<CR>]], { noremap = true, silent = true })
+
 -- Additional NERDTree mappings for focusing, opening, and toggling
 vim.keymap.set("n", "<C-F>", ":NERDTreeFocus<CR>")
 vim.keymap.set("n", "<C-N>", ":NERDTree<CR>")
@@ -82,3 +85,23 @@ vim.keymap.set("n", "<C-T>", ":NERDTreeToggle<CR>")
 vim.keymap.set("n", "<F8>", ":TagbarToggle<CR>") -- Toggle Tagbar with F8
 vim.keymap.set("n", "<C-l>", ":call CocActionAsync('jumpDefinition')<CR>") -- Go to definition with <C-l>
 
+local conceal_level_enabled = true
+
+function Toggle_conceal_level_and_highlight()
+    if conceal_level_enabled then
+        vim.o.conceallevel = 0
+        -- Set the highlight for bars and stars to Normal to make them visible
+        vim.cmd('hi link HelpBar Normal')
+        vim.cmd('hi link HelpStar Normal')
+        conceal_level_enabled = false
+    else
+        vim.o.conceallevel = 2
+        -- Re-link bars and stars to Ignore (or a similar group) to hide them again
+        -- Assuming HelpBar and HelpStar are your custom groups for bars and stars
+        vim.cmd('hi link HelpBar Ignore')
+        vim.cmd('hi link HelpStar Ignore')
+        conceal_level_enabled = true
+    end
+end
+
+vim.api.nvim_set_keymap('n', '<leader>h', ':lua Toggle_conceal_level_and_highlight()<CR>', { noremap = true, silent = true })

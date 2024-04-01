@@ -96,15 +96,15 @@ return require('packer').startup(function(use)
 
     -- Utilities & Others
 
-    --    use 'ThePrimeagen/harpoon' -- Project navigation and management
-    -- use 'nvim-lua/plenary.nvim' -- Common utilities required by many plugins
+    --  Project navigation and management
+    use 'nvim-lua/plenary.nvim' -- Common utilities required by many plugins
     use	{
 	    'ThePrimeagen/harpoon', branch = 'harpoon2',
 	    requires = { {'nvim-lua/plenary.nvim'} }
     }
-    -- use 'preservim/tagbar'
-    -- use "tc50cal/vim-terminal"
-    -- use "terryma/vim-multiple-cursors"
+    use 'preservim/tagbar'
+    use "tc50cal/vim-terminal"
+    use "terryma/vim-multiple-cursors"
 
     -- plugin issues
     -- use "rstacruz/vim-closer" -- crashes
