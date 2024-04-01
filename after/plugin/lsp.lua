@@ -1,15 +1,26 @@
 local lsp = require("lsp-zero")
-
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-  'tsserver',
-  'rust_analyzer',
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = {
+        'tsserver', 'rust_analyzer', 'azure_pipelines_ls', 'bicep', 'csharp_ls',
+        'cssls', 'cssmodules_ls', 'docker_compose_language_service', 'dockerls',
+        'eslint', 'grammarly', 'html', 'htmx', 'intelephense', 'jinja_lsp',
+        'jsonls', 'lua_ls', 'omnisharp', 'powershell_es', 'pylsp',
+        'tailwindcss', 'yamlls',
+    },
+    handlers = {
+        lsp.default_setup,
+        lua_ls = function()
+            local lua_opts = lsp.nvim_lua_ls()
+            require('lspconfig').lua_ls.setup(lua_opts)
+        end,
+    },
 })
 
 -- Fix Undefined global 'vim'
-lsp.nvim_workspace()
-
+-- lsp.nvim_workspace()
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -19,12 +30,22 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ["<C-Space>"] = cmp.mapping.complete(),
 })
-
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
-
-lsp.setup_nvim_cmp({
-  mapping = cmp_mappings
+cmp.setup({
+    sources = {
+        {name = 'nvim_lsp'},
+    },
+    window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+    },
+    mapping = cmp_mappings,
+    snippet = {
+      expand = function(args)
+        require('luasnip').lsp_expand(args.body)
+      end,
+    },
 })
 
 lsp.set_preferences({

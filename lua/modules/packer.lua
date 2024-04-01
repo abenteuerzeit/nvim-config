@@ -16,8 +16,8 @@ return require('packer').startup(function(use)
         end
     }
     use 'folke/zen-mode.nvim' -- Distraction-free coding environment
-    -- use "ap/vim-css-color"
-    -- use "rafi/awesome-vim-colorschemes"
+    use "ap/vim-css-color"
+    use "rafi/awesome-vim-colorschemes"
 
     -- Navigation & Searching
     use	{
@@ -70,7 +70,7 @@ return require('packer').startup(function(use)
     -- LSP & Autocompletion
     use {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        branch = 'v3.x',
         requires = {
             'neovim/nvim-lspconfig',
             'williamboman/mason.nvim',
@@ -110,5 +110,15 @@ return require('packer').startup(function(use)
     -- use "rstacruz/vim-closer" -- crashes
     -- use "jiangmiao/auto-pairs" -- error key not present in dictionary
     -- use "ryanoasis/vim-devicons" -- crashes on PackerSync
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
+    })
+
 end)
 
